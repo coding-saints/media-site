@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+html,body {
+   
+     font-family: "Roboto";
+     font-weight: 100;
+}
+
+    header {
+        font-family: "Roboto";
+        min-width: 100%;
+        background: #4169e1;
+         box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        span.brand a img.logo {
+            width: 300px;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 25px;
+            font-size: 1.6em;
+            .link-1 {             
+               height: 50px;
+                 transition: 0.5s ease;
+                   background: #4169e1;
+                   border-top: 3px solid #4169e1;
+                   border-bottom: 3px solid #4169e1;
+                 margin-left: 55px;
+                 
+                 line-height: 50px;
+                 font-size: 1.2em;
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+                text-decoration: none;
+                list-style: none;
+                color: white;
+            }
+            .link-1:hover {
+                 border-top: 4px solid #ffffff;
+                 border-bottom: 4px solid #ffffff;
+                 padding: -6px 0;
+            }
+        }
+    }
+
+
+@media screen and(max-width:900px) {
+    header {
+        min-width: 100%;
+        span.brand a img.logo {
+            width: 50%;
+            margin: auto;
+        }
+        .nav-wrapper {
+            display: flex;
+           
+            font-size: 1.2em;
+            .link-1 {
+                
+                
+               
+            }
+        }
+    }
+}
+@media screen and(max-width:600px) {
+    header {
+        min-width: 100%;
+       
+        span.brand a img.logo {
+            width: 100%;
+            
+            
+        }
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-around;
+            font-size: 1em;
+            padding: 0;
+            
+          
+          .link-1 {
+            padding: 0;
+            margin: 0;
+          }
+        }
+    
+        
+    }
+}

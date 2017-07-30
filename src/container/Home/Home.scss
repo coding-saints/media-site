@@ -1,0 +1,587 @@
+@media (min-width: 901px) {
+    .home-container {
+       width: 100%;
+        margin: auto;
+           padding-left: 10px;
+           padding-right: 10px;
+        .welcome {
+            text-align: center;
+            font-family: "Roboto";
+            font-weight: 100;
+        }
+        .header {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            .price-img {
+                 width: 75%;
+                height: 500px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .ecom {
+                font-size:3em;
+            text-align: center;
+            font-family: "Roboto";
+            font-weight: 300;
+            }
+        }
+        .price {
+            color: gray;
+            margin: auto;
+            text-align: center;
+            @mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+                box-shadow: inset 0 0 0 $width $color;
+                color: $color;
+                transition: color $duration $duration/3;
+                position: relative;
+                &::before,
+                &::after {
+                    border: 0 solid transparent;
+                    box-sizing: border-box;
+                    content: '';
+                    pointer-events: none;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    #{$vertical}: 0;
+                    #{$horizontal}: 0;
+                }
+                &::before {
+                    $h-side: if($horizontal=='left', 'right', 'left');
+                    border-#{$vertical}-width: $width;
+                    border-#{$h-side}-width: $width;
+                }
+                &::after {
+                    $v-side: if($vertical=='top', 'bottom', 'top');
+                    border-#{$v-side}-width: $width;
+                    border-#{$horizontal}-width: $width;
+                }
+                &:hover {
+                    color: $hover;
+                    &::before,
+                    &::after {
+                        border-color: $hover;
+                        transition: border-color 0s, width $duration, height $duration;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &::before {
+                        transition-delay: 0s, 0s, $duration;
+                    }
+                    &::after {
+                        transition-delay: 0s, $duration, 0s;
+                    }
+                }
+            }
+            .draw-border {
+                @include btn-border-drawing(#58afd1, #ffe593, 4px, bottom, right);
+            }
+            //=== Button styling, semi-ignore
+            .btn {
+                margin: auto;
+                background: none;
+                border: none;
+                cursor: pointer;
+                line-height: 1.5;
+                font: 700 1.2rem 'Roboto Slab', sans-serif;
+                padding: 1em 2em;
+                letter-spacing: 0.05rem;
+                &:focus {
+                    outline: 2px dotted #55d7dc;
+                }
+            }
+            @mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+                box-shadow: inset 0 0 0 $width $color;
+                color: $color;
+                transition: color $duration $duration/3;
+                position: relative;
+                &::before,
+                &::after {
+                    border: 0 solid transparent;
+                    box-sizing: border-box;
+                    content: '';
+                    pointer-events: none;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    #{$vertical}: 0;
+                    #{$horizontal}: 0;
+                }
+                &::before {
+                    $h-side: if($horizontal=='left', 'right', 'left');
+                    border-#{$vertical}-width: $width;
+                    border-#{$h-side}-width: $width;
+                }
+                &::after {
+                    $v-side: if($vertical=='top', 'bottom', 'top');
+                    border-#{$v-side}-width: $width;
+                    border-#{$horizontal}-width: $width;
+                }
+                &:hover {
+                    color: $hover;
+                    &::before,
+                    &::after {
+                        border-color: $hover;
+                        transition: border-color 0s, width $duration, height $duration;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &::before {
+                        transition-delay: 0s, 0s, $duration;
+                    }
+                    &::after {
+                        transition-delay: 0s, $duration, 0s;
+                    }
+                }
+            }
+            .draw-border {
+                @include btn-border-drawing(#58afd1, #ffe593, 4px, bottom, right);
+            }
+            //=== Button styling, semi-ignore
+            .btn {
+                background: none;
+                border: none;
+                cursor: pointer;
+                line-height: 1.5;
+                font: 700 1.2rem 'Roboto Slab', sans-serif;
+                padding: 1em 2em;
+                letter-spacing: 0.05rem;
+                &:focus {
+                    outline: 2px dotted #55d7dc;
+                }
+            }
+        }
+        .new-team {
+            margin: auto;
+            padding: 2px;
+            text-align: center;
+            font: {
+                size: 1.5em;
+            }
+        }
+        .row {
+            .panel {
+                
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+           
+                font-family: "Roboto";
+                font-weight: 400;
+                padding: 10px;
+                     text-align: center;
+                .panel-image>img {
+                   
+                    width: 75%;
+                    height: 500px;
+                    text-align: center;
+                }
+                .con {
+                    h4 {
+                        font-size: 2em;
+                        }
+                    p {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 900px) {
+    .home-container {
+     
+        max-width: 900px;
+        margin: auto;
+        font-family: "Roboto";
+        .welcome {
+            text-align: center;
+            
+            font-weight: lighter;
+        }
+        .header {
+            font-family: "Roboto";
+            .price-img {
+                width: 100%;
+                height: 500px;
+               font-family: "Roboto";
+                padding: 1em;
+               
+            }
+         .ecom {
+                font-family: "Roboto";
+                text-align: center;
+                font-size: 2em;
+                font-weight: inherit;
+            }
+        }
+        .price {
+           
+            margin: auto;
+            text-align: center;
+            @mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+                box-shadow: inset 0 0 0 $width $color;
+                color: $color;
+                transition: color $duration $duration/3;
+                position: relative;
+                &::before,
+                &::after {
+                    border: 0 solid transparent;
+                    box-sizing: border-box;
+                    content: '';
+                    pointer-events: none;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    #{$vertical}: 0;
+                    #{$horizontal}: 0;
+                }
+                &::before {
+                    $h-side: if($horizontal=='left', 'right', 'left');
+                    border-#{$vertical}-width: $width;
+                    border-#{$h-side}-width: $width;
+                }
+                &::after {
+                    $v-side: if($vertical=='top', 'bottom', 'top');
+                    border-#{$v-side}-width: $width;
+                    border-#{$horizontal}-width: $width;
+                }
+                &:hover {
+                    color: $hover;
+                    &::before,
+                    &::after {
+                        border-color: $hover;
+                        transition: border-color 0s, width $duration, height $duration;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &::before {
+                        transition-delay: 0s, 0s, $duration;
+                    }
+                    &::after {
+                        transition-delay: 0s, $duration, 0s;
+                    }
+                }
+            }
+            .draw-border {
+                @include btn-border-drawing(#58afd1, #ffe593, 4px, bottom, right);
+            }
+            //=== Button styling, semi-ignore
+            .btn {
+                margin: auto;
+                background: none;
+                border: none;
+                cursor: pointer;
+                line-height: 1.5;
+                font: 700 1.2rem 'Roboto Slab', sans-serif;
+                padding: 1em 2em;
+                letter-spacing: 0.05rem;
+                &:focus {
+                    outline: 2px dotted #55d7dc;
+                }
+            }
+            @mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+                box-shadow: inset 0 0 0 $width $color;
+                color: $color;
+                transition: color $duration $duration/3;
+                position: relative;
+                &::before,
+                &::after {
+                    border: 0 solid transparent;
+                    box-sizing: border-box;
+                    content: '';
+                    pointer-events: none;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    #{$vertical}: 0;
+                    #{$horizontal}: 0;
+                }
+                &::before {
+                    $h-side: if($horizontal=='left', 'right', 'left');
+                    border-#{$vertical}-width: $width;
+                    border-#{$h-side}-width: $width;
+                }
+                &::after {
+                    $v-side: if($vertical=='top', 'bottom', 'top');
+                    border-#{$v-side}-width: $width;
+                    border-#{$horizontal}-width: $width;
+                }
+                &:hover {
+                    color: $hover;
+                    &::before,
+                    &::after {
+                        border-color: $hover;
+                        transition: border-color 0s, width $duration, height $duration;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &::before {
+                        transition-delay: 0s, 0s, $duration;
+                    }
+                    &::after {
+                        transition-delay: 0s, $duration, 0s;
+                    }
+                }
+            }
+            .draw-border {
+                @include btn-border-drawing(#58afd1, #ffe593, 4px, bottom, right);
+            }
+            //=== Button styling, semi-ignore
+            .btn {
+                background: none;
+                border: none;
+                cursor: pointer;
+                line-height: 1.5;
+                font: 700 1.2rem 'Roboto Slab', sans-serif;
+                padding: 1em 2em;
+                letter-spacing: 0.05rem;
+                &:focus {
+                    outline: 2px dotted #55d7dc;
+                }
+            }
+        }
+        .new-team {
+            margin: auto;
+            padding: 2px;
+            text-align: center;
+            font: {
+                size: 1.5em;
+            }
+        }
+        .row {
+            
+            .panel {
+                background: #FFF;
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                text-align: center;
+                padding: 10px;
+                .panel-image>img {
+                    display: block;
+                    width: 100%;
+                    height: 500px;
+                }
+                .con {
+                    
+                    h4 {
+                        font-size: 2em;
+                    }
+                    p {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .home-container {
+       max-width: 600px;
+       margin: auto;
+        .welcome {
+            text-align: center;
+            font-family: "Roboto";
+            font-weight: lighter;
+        }
+        .header {
+            .price-img {
+               min-width: 100%;
+               height: 300px;
+               transform: 2%;
+               &:hover {
+                   transform: scale(1.2);
+                   transition: all .5s;
+               }
+            }
+            .ecom {
+                text-align: center;
+                font-weight: inherit;
+            }
+        }
+           
+            .price {
+                color: gray;
+                margin: auto;
+                text-align: center;
+ @mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+  box-shadow: inset 0 0 0 $width $color;
+  color: $color;
+  transition: color $duration $duration/3;
+  position: relative;
+  
+  &::before,
+  &::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0; height: 0;
+    
+    #{$vertical}: 0; 
+    #{$horizontal}: 0;
+  }
+
+  &::before {
+    $h-side: if($horizontal == 'left', 'right', 'left');
+    
+    border-#{$vertical}-width: $width;
+    border-#{$h-side}-width: $width;
+  }
+  
+  &::after {
+    $v-side: if($vertical == 'top', 'bottom', 'top');
+    
+    border-#{$v-side}-width: $width;
+    border-#{$horizontal}-width: $width;
+  }
+  
+  &:hover {
+    color: $hover;
+    
+    &::before,
+    &::after {
+      border-color: $hover;
+      transition: border-color 0s, width $duration, height $duration;
+      width: 100%;
+      height: 100%;
+    }
+    
+    &::before { transition-delay: 0s, 0s, $duration; }
+    
+    &::after { transition-delay: 0s, $duration, 0s; }
+  }
+}
+
+.draw-border {
+  @include btn-border-drawing(#58afd1, #ffe593, 4px, bottom, right);
+}
+
+//=== Button styling, semi-ignore
+.btn {
+    margin: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+  
+  &:focus { outline: 2px dotted #55d7dc; }
+}
+@mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+    box-shadow: inset 0 0 0 $width $color;
+    color: $color;
+    transition: color $duration $duration/3;
+    position: relative;
+    &::before,
+    &::after {
+        border: 0 solid transparent;
+        box-sizing: border-box;
+        content: '';
+        pointer-events: none;
+        position: absolute;
+        width: 0;
+        height: 0;
+        #{$vertical}: 0;
+        #{$horizontal}: 0;
+    }
+
+    &::before {
+        $h-side: if($horizontal=='left', 'right', 'left');
+        border-#{$vertical}-width: $width;
+        border-#{$h-side}-width: $width;
+    }
+
+    &::after {
+        $v-side: if($vertical=='top', 'bottom', 'top');
+        border-#{$v-side}-width: $width;
+        border-#{$horizontal}-width: $width;
+    }
+
+    &:hover {
+        color: $hover;
+        &::before,
+        &::after {
+            border-color: $hover;
+            transition: border-color 0s, width $duration, height $duration;
+            width: 100%;
+            height: 100%;
+        }
+        &::before {
+            transition-delay: 0s, 0s, $duration;
+        }
+        &::after {
+            transition-delay: 0s, $duration, 0s;
+        }
+    }
+}
+.draw-border {
+    @include btn-border-drawing(#58afd1, #ffe593, 4px, bottom, right);
+}
+//=== Button styling, semi-ignore
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+    &:focus {
+        outline: 2px dotted #55d7dc;
+    }
+}
+            }
+           
+           
+            
+                .new-team {
+                    margin: auto;
+                    padding: 2px;
+                    text-align: center;
+                    font: {
+                        size: 1.5em;
+
+                    }
+                
+            }
+            .row {
+          
+                .panel {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                        margin:0 auto;
+                        text-align: center;
+                    padding: 10px;
+                    .panel-image>img {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                    }
+                   .con {
+                       h4 {
+
+                       }
+                       p {
+
+                       }
+                   }
+                }
+            }
+        
+    }
+
+
+}
