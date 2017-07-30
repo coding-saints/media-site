@@ -8,6 +8,7 @@
             text-align: center;
             font-family: "Roboto";
             font-weight: 100;
+            font-size: 6em;
         }
         .header {
             width: 100%;
@@ -30,6 +31,7 @@
             color: gray;
             margin: auto;
             text-align: center;
+            font-size: 1.5em;
             @mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
                 box-shadow: inset 0 0 0 $width $color;
                 color: $color;
@@ -172,17 +174,18 @@
                 padding: 10px;
                      text-align: center;
                 .panel-image>img {
-                   
+                   font-family: "Roboto";
+                   font-weight: 300;
                     width: 75%;
                     height: 500px;
                     text-align: center;
                 }
                 .con {
                     h4 {
-                        font-size: 2em;
+                        font-size: 3em;
                         }
                     p {
-                        font-size: 1.3em;
+                        font-size: 2.5em;
                     }
                 }
             }

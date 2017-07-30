@@ -12,25 +12,25 @@ const Price = () => (
             <div className="panel-wrapper">
                     
                         <PricePanel 
-                        src={require("../../public/assets/starter.png")}
+                        src={require("../../public/assets/start.png")}
                         price="$"
                         plan="Limited"
                         list={["Store Set-Up", "Import of (up to) 24 Products", "NO SUPPORT"]}
                         />
                         <PricePanel
-                            src={require("../../public/assets/picreact-min.png")}
+                            src={require("../../public/assets/money.jpg")}
                             price="$$"
                             plan="Let's get serious"
                             list={["Customized Theme", "Basic Social-Media Set-Up", "3 Month support", "SEO"]}
                         />
                         <PricePanel
-                            src={require("../../public/assets/credit.jpg")}
+                            src={require("../../public/assets/bigbuild.jpg")}
                             price="$$$"
                             plan="Ballin!"
                             list={["Sitemap", "Social-Media Maintenance", "6 Month Suppport"]}
                         />
                         <PricePanel
-                            src={require("../../public/assets/credit.jpg")}
+                            src={require("../../public/assets/splash.jpg")}
                             price="$$$$"
                             plan="Leave Number"
                             list={["You're here because you're sick of looking at the same shit. As soon as you send your message I'll get back to you personally"]}

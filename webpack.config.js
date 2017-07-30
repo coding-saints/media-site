@@ -10,7 +10,7 @@ const PATHS = {
 };
 
 module.exports = {
-    devtool: 'cheap-eval-source-map',
+    devtool: 'source-map',
     entry: {
         app: PATHS.app,
     },
@@ -111,7 +111,7 @@ module.exports = {
             disable: false,
             allChunks: true
         }),
-        // new UglifyJSPlugin(),
+         new UglifyJSPlugin(),
         new webpack.optimize.AggressiveMergingPlugin(), //Merge chunks 
         new CompressionPlugin({
             asset: "[path].gz[query]",

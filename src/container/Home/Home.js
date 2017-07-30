@@ -9,14 +9,14 @@ export default class Home extends React.Component {
             <div className="home-container">
                 <h1 className="welcome">Welcome to Shopify Media</h1>
                 <div className="header">
-                    <img className="price-img" src={require("../../public/assets/homepage.png")} />
-                    <p className="ecom">Introducing a new <br />way to use <br />E-Commerce</p>
+                    <img className="price-img" src={require("../../public/assets/showing.png")} />
+                    <p className="ecom">Introducing a new way to use <br />E-Commerce</p>
                 </div>
 
                 <div className="price">
                   <center>  Starting at
                     <br />
-                    $799
+                    $999
                 </center> 
                   <br />
                   <button className="btn draw-border"><Link to="/price">Get Started Now!</Link></button>              
@@ -29,11 +29,11 @@ export default class Home extends React.Component {
                     <div className="row">
                       
                         <Panel
-                        img={require("../../public/assets/showing.png")}
+                            img={require("../../public/assets/homepage.png")}
                        
                         alt="React and Shopify"
                             title="New Styles"
-                            paragraph="Tons of new stuff including React"
+                            paragraph="React Templates for better performance. Modern tech for the modern business"
 
 
                         />
@@ -41,14 +41,14 @@ export default class Home extends React.Component {
                             img={require("../../public/assets/seo.png")}
                             alt="Google SEO"
                             title="Solving SEO"
-                            paragraph="Taking time to create a foundation that leads your company to the top of the page ranks"
+                            paragraph="Taking time to create a foundation that leads your company to the top of the page ranks. Also introducing Progressive Web!"
 
                       />
                        <Panel 
                             img={require("../../public/assets/security.jpg")}
                             alt="Online Security"
                             title="Online Security"
-                            paragraph="NO more worrying about your site, or your money"
+                            paragraph="No more worries about your site, or your money! Secure HTTPS, and other custom methods will leave the competition behind."
                        
                        />
                         
