@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactForm from './ContactForm'
+import ContactFormHire from './ContactFormHire'
 import './Contact.scss'
 const Contact = () => (
     <div className="contact-page">
@@ -12,7 +12,7 @@ const Contact = () => (
                          way to deliver your content?
                          <br />
         </div>
-        <ContactForm />
+        <ContactFormHire />
     </div>
 )
 

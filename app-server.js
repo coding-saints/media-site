@@ -1,8 +1,9 @@
-import path from 'path'
-import express from 'express'
+const path = require('path')
+const express = require('express')
 // const nodemailer = require('nodemailer')
-import bodyParser from 'body-parser'
-import React from 'react'
+const bodyParser = require ('body-parser')
+const React = require ('react')
+// require('dotenv').config()
 // const ContactFormFactory = React.createFactory(require('./src/container/Contact/ContactForm.js'))
 const BUILD_DIR = path.join(__dirname, "dist"),
     PORT = process.env.PORT || 8081,

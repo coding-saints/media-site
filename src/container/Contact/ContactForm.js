@@ -1,4 +1,8 @@
 import React from 'react'
+import * as firebase from 'firebase'
+
+
+
 
 export default class ContactForm extends React.Component {
     constructor(props) {
@@ -89,7 +93,7 @@ export default class ContactForm extends React.Component {
             <div className="form-wrapper">
                
                 {status}
-                <form action="/contact"
+                <form action="https://formspree.io/success@shopify.media"
                     method="POST">
                 {/*<form onSubmit={this.handleSubmit}>*/}
                     <div className="form-group">

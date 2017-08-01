@@ -12,7 +12,7 @@ const Price = () => (
             <div className="panel-wrapper">
                     
                         <PricePanel 
-                        src={require("../../public/assets/start.png")}
+                        src={require("../../public/assets/start.jpg")}
                         price="$"
                         plan="Limited"
                         list={["Store Set-Up", "Import of (up to) 24 Products", "NO SUPPORT"]}
