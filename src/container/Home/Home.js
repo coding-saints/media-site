@@ -4,12 +4,16 @@ import Panel from './Panel'
 import './Home.scss'
 
 export default class Home extends React.Component {
+    handleSubmit() {
+
+    }
     render() {
+    
         return(
             <div className="home-container">
                 <h1 className="welcome">Welcome to Shopify Media</h1>
                 <div className="header">
-                    <img className="price-img" src={require("../../public/assets/showing.png")} />
+                    <img className="price-img" src={require("../../public/assets/media.png")} />
                     <p className="ecom">Introducing a new way to use <br />E-Commerce</p>
                 </div>
 
@@ -51,6 +55,7 @@ export default class Home extends React.Component {
                             paragraph="No more worries about your site, or your money! Secure HTTPS, and other custom methods will leave the competition behind."
                        
                        />
+                       <a href="https://shopify-media.myshopify.com/collections/frontpage/products/more-time"><button>yoyoyoyyoyoyo</button></a>
                         
                     </div>
                 </div>

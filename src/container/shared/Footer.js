@@ -1,9 +1,18 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+
 import './Footer.scss'
 const Footer = () => (
     <footer>
-  
+        <div className="therest">
+            <ul>
+                <Link to="/"><li>Home</li></Link>
+                <Link to="/contact"><li>Contact</li></Link>
+                <Link to="/blog"><li>Blog</li></Link>
+                <Link to="/price"><li>Pricing</li></Link>
+            </ul>
+        </div>
+       
         <div className="social-btns">
             <a className ="btn facebook" href = "https://www.facebook.com/ShopifyMedia/" > < i className = "fa fa-facebook"> </i></a>
             <a className="btn twitter" href="https://www.twitter.com/ShopifyMedia"><i className="fa fa-twitter"></i></a>
@@ -11,7 +20,7 @@ const Footer = () => (
             <a className="btn dribbble" href="https://www.instagram.com/shopifymedia/"><i className="fa fa-instagram"></i></a>
             <a className="btn phoneicon" href="tel:1-717-439-2279"><i className="fa fa-phone"></i></a>
            
-            {/*<a className="btn skype" href="#"><i className="fa fa-skype"></i></a>*/}
+            
         </div>
         <div id="social-mobile">
             <a className="face" href="#"><i className="fa fa-facebook"></i></a>
@@ -21,7 +30,8 @@ const Footer = () => (
             <a className="phone" href="#"><i className="fa fa-phone"></i></a>
             {/*<a className="skype" href="#"><i className="fa fa-skype"></i></a>*/}
         </div>
-      
+        <div className="copyright">Copyright NJK Productions 2017</div>
+    
     </footer>
 )
 export default Footer;

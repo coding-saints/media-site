@@ -25,9 +25,15 @@ app.use(bodyParser.json())
 
 app.use(express.static(BUILD_DIR))
 
-app.use((req, res, next) => {
-    res.sendFile(path.join(BUILD_DIR, 'index.html'))
-})
+// Routes
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, "../www/index.html"));
+});
+
+// Default to index for react-router
+app.use(function (req, res) {
+    res.sendFile(path.join(__dirname, "../www/index.html"));
+});
 
 app.use((req, res, next) => {
     const err = new Error("Not Found")
@@ -36,15 +42,6 @@ app.use((req, res, next) => {
 })
 
 
-// app.get('/',(req, res) => {
-//     const ContactFormOne = React.renderToString(ContactFormFactory())
-//     res.render( {Content: ContactFormOne}) 
-// })
-
- app.post('/contact', (req, res) => {
-    let info = req.body
-    console.log(info);
- })
 
 app.listen(PORT)
 console.log('server started');
