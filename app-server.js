@@ -27,12 +27,12 @@ app.use(express.static(BUILD_DIR))
 
 // Routes
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, "../www/index.html"));
+    res.sendFile(path.join(__dirname, "dist/index.html"));
 });
 
 // Default to index for react-router
 app.use(function (req, res) {
-    res.sendFile(path.join(__dirname, "../www/index.html"));
+    res.sendFile(path.join(__dirname, "dist/index.html"));
 });
 
 app.use((req, res, next) => {
